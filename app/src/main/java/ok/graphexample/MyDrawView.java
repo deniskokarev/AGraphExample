@@ -1,13 +1,11 @@
-package ok;
+package ok.graphexample;
 
 import android.content.Context;
-import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.util.AttributeSet;
-import android.util.TypedValue;
 import android.view.View;
 
 import androidx.annotation.ColorInt;
@@ -19,8 +17,8 @@ public class MyDrawView extends View {
     public final static int TRIANGLE = 1;
     public final static int SQUARE = 2;
 
-    private Paint brush;
-    private float figures[][];
+    private final Paint brush;
+    private float[][] figures;
     private int figure;
 
     public MyDrawView(Context context, AttributeSet attrs) {
@@ -41,7 +39,7 @@ public class MyDrawView extends View {
     }
 
     private float[] makePoly(int n, double angle, int radius, int cx, int cy) {
-        float points[] = new float[4 * n];
+        float[] points = new float[4 * n];
         double sector = 2 * Math.PI / n;
         int x1 = cx + (int) (radius * Math.cos(angle));
         int y1 = cy - (int) (radius * Math.sin(angle));

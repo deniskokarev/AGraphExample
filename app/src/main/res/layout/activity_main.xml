@@ -6,8 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity"
-    xmlns:custom="http://schemas.android.com/apk/res-auto">
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/header"
@@ -18,12 +17,12 @@
         android:text="@string/choose_a_shape"
         android:textSize="32sp" />
 
-    <ok.MyDrawView
+    <ok.graphexample.MyDrawView
         android:id="@+id/view_canvas"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_weight="100"
-        custom:color="@color/design_default_color_primary"/>
+        app:color="@color/design_default_color_primary"/>
 
     <LinearLayout
         android:layout_width="match_parent"

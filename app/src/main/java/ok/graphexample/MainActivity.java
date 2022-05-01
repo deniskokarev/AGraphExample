@@ -8,8 +8,6 @@ import android.view.View;
 
 import java.lang.invoke.MethodHandles;
 
-import ok.MyDrawView;
-
 public class MainActivity extends AppCompatActivity {
     private final static String TAG = MethodHandles.lookup().lookupClass().getName();
 
