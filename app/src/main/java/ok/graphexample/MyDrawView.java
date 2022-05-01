@@ -10,8 +10,6 @@ import android.view.View;
 
 import androidx.annotation.ColorInt;
 
-import ok.graphexample.R;
-
 public class MyDrawView extends View {
     public final static int CIRCLE = 0;
     public final static int TRIANGLE = 1;
