@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GraphExample</string>
+    <string name="circle">Circle</string>
+    <string name="triangle">Triangle</string>
+    <string name="square">Square</string>
+    <string name="choose_a_shape">Choose a shape</string>
+</resources>
